@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'KyivTypeSans';
+  src: url(../fonts/KyivTypeSans-VarGX.ttf);
+  font-style: normal;
+}
+
+/* GT Eesti Pro Text */
+@font-face {
+  font-family: 'GT Eesti Pro Text';
+  src: url('../fonts/GTEestiProText-ThinItalic.eot');
+  src: local('GT Eesti Pro Text Thin Italic'), local('GTEestiProText-ThinItalic'),
+    url('../fonts/GTEestiProText-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTEestiProText-ThinItalic.woff2') format('woff2'),
+    url('../fonts/GTEestiProText-ThinItalic.woff') format('woff'),
+    url('../fonts/GTEestiProText-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Text';
+  src: url('../fonts/GTEestiProText-Medium.eot');
+  src: local('GT Eesti Pro Text Medium'), local('GTEestiProText-Medium'),
+    url('../fonts/GTEestiProText-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTEestiProText-Medium.woff2') format('woff2'),
+    url('../fonts/GTEestiProText-Medium.woff') format('woff'),
+    url('../fonts/GTEestiProText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Text';
+  src: url('../fonts/GTEestiProText-LightItalic.eot');
+  src: local('GT Eesti Pro Text Light Italic'), local('GTEestiProText-LightItalic'),
+    url('../fonts/GTEestiProText-LightItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTEestiProText-LightItalic.woff2') format('woff2'),
+    url('../fonts/GTEestiProText-LightItalic.woff') format('woff'),
+    url('../fonts/GTEestiProText-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Display';
+  src: url('../fonts/GTEestiProDisplay-Bold.eot');
+  src: local('GT Eesti Pro Display Bold'), local('GTEestiProDisplay-Bold'),
+    url('../fonts/GTEestiProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTEestiProDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/GTEestiProDisplay-Bold.woff') format('woff'),
+    url('../fonts/GTEestiProDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GT Eesti Pro Text';
+  src: url('../fonts/GTEestiProText-Light.eot');
+  src: local('GT Eesti Pro Text Light'), local('GTEestiProText-Light'),
+    url('../fonts/GTEestiProText-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/GTEestiProText-Light.woff2') format('woff2'),
+    url('../fonts/GTEestiProText-Light.woff') format('woff'),
+    url('../fonts/GTEestiProText-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
