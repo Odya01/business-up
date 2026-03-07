@@ -4,6 +4,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Golos Text';
+  src: url(../fonts/GolosText-Medium.ttf);
+  font-style: normal;
+}
+
 /* GT Eesti Pro Text */
 @font-face {
   font-family: 'GT Eesti Pro Text';

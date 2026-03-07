@@ -22,7 +22,7 @@
             <div class="block__blur header__rating">
               <div class="rating__yandex-icon"></div>
               <div class="rating__info">
-                <span class="header__rating-value">Рейтинг : 4.9</span>
+                <span class="header__rating-value">Рейтинг • 4.9</span>
                 <span class="text__descr header__rating-reviews"
                   >135 отзывов</span
                 >
@@ -33,7 +33,7 @@
             </div>
           </div>
 
-          <a href="/">
+          <a href="/" class="header__logo-link">
             <img
               src="src/img/Logo.svg"
               alt="Логотип Ангел Concept"
@@ -42,8 +42,8 @@
           </a>
 
           <div class="header__contact">
-            <span class="block__blur contact-icon icon-whatsapp"></span>
-            <span class="block__blur contact-icon icon-telegram"></span>
+            <a href="#" class="block__blur contact-icon icon-whatsapp"></a>
+            <a href="#" class="block__blur contact-icon icon-telegram"></a>
 
             <div class="contact__info">
               <a href="tel:+79100044636" class="contact__phone"
@@ -55,8 +55,21 @@
             </div>
 
             <button class="btn contact__btn">
-              Запись на приём
-              <span class="btn__arrow btn__arrow--orange"></span>
+              <span class="contact__btn-text">Запись на приём</span>
+              <span class="btn__arrow btn__arrow--orange">
+                <svg
+                  class="btn__icon"
+                  width="9"
+                  height="9"
+                  viewBox="0 0 9 9"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.65332 8.4543C8.65332 8.56475 8.56378 8.6543 8.45332 8.6543H7.45391C7.34345 8.6543 7.25391 8.56475 7.25391 8.4543V2.87347C7.25391 2.69529 7.03848 2.60605 6.91249 2.73205L1.2049 8.43963C1.12679 8.51774 1.00016 8.51774 0.922055 8.43963L0.214664 7.73224C0.136559 7.65414 0.136559 7.5275 0.214664 7.4494L5.92225 1.74181C6.04824 1.61582 5.95901 1.40039 5.78083 1.40039H0.2C0.089543 1.40039 0 1.31085 0 1.20039V0.2C0 0.0895431 0.089543 0 0.2 0H8.45332C8.56378 0 8.65332 0.0895431 8.65332 0.2V8.4543Z"
+                  />
+                </svg>
+              </span>
             </button>
           </div>
         </div>
@@ -64,31 +77,50 @@
         <nav class="header__nav">
           <ul class="header__nav-list list-reset">
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">все услуги \/</a>
+              <a href="#" class="header__nav-link">
+                <span class="header__nav-text">Все услуги</span>
+                <span class="header__nav-arrow">
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5 6.25L8 11.75L2.5 6.25"
+                      stroke="white"
+                      stroke-width="1.6"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">О центре</a>
+              <a href="#" class="header__nav-link">О центре</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">косметология</a>
+              <a href="#" class="header__nav-link">Косметология</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">SPA & Thai</a>
+              <a href="#" class="header__nav-link">SPA & Thai</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">велнесс-терапия</a>
+              <a href="#" class="header__nav-link">Велнесс-терапия</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">SPA & Релакс</a>
+              <a href="#" class="header__nav-link">SPA & Релакс</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">коррекция фигуры</a>
+              <a href="#" class="header__nav-link">Коррекция фигуры</a>
             </li>
             <li class="header__nav-item">
               <a href="#" class="header__nav-link">Журнал</a>
             </li>
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">сертификаты</a>
+              <a href="#" class="header__nav-link">Сертификаты</a>
             </li>
             <li class="header__nav-item">
               <a href="#" class="header__nav-link">Контакты</a>
@@ -100,13 +132,131 @@
 
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="heading"></h1>
-          <p class="text"></p>
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="heading hero__heading">
+              Ангел Concept — <br />
+              центр премиального ухода <br />
+              и косметологии в Ставрополе
+            </h1>
+
+            <p class="text hero__text">
+              Место, где вы выбираете заботу о себе как стиль жизни. Эстетично,
+              профессионально и легко
+            </p>
+
+            <button class="btn hero__btn">
+              <span class="btn-text">Подробнее об услугах</span>
+              <span class="btn__arrow">
+                <svg
+                  class="btn__icon btn__icon--orange"
+                  width="9"
+                  height="9"
+                  viewBox="0 0 9 9"
+                  fill="white"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.65332 8.4543C8.65332 8.56475 8.56378 8.6543 8.45332 8.6543H7.45391C7.34345 8.6543 7.25391 8.56475 7.25391 8.4543V2.87347C7.25391 2.69529 7.03848 2.60605 6.91249 2.73205L1.2049 8.43963C1.12679 8.51774 1.00016 8.51774 0.922055 8.43963L0.214664 7.73224C0.136559 7.65414 0.136559 7.5275 0.214664 7.4494L5.92225 1.74181C6.04824 1.61582 5.95901 1.40039 5.78083 1.40039H0.2C0.089543 1.40039 0 1.31085 0 1.20039V0.2C0 0.0895431 0.089543 0 0.2 0H8.45332C8.56378 0 8.65332 0.0895431 8.65332 0.2V8.4543Z"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="hero__services">
+            <div class="hero__service hero__service--active">
+              <div class="hero__service-content">
+                <span class="block__blur hero__service-number">1</span>
+
+                <p class="hero__service-text">
+                  Косметология: уходы, инъекции, лифтинг
+                </p>
+              </div>
+
+              <img
+                src="src/img/hero1.png"
+                alt="Косметология: уходы, инъекции, лифтинг"
+                class="hero__service-image"
+              />
+            </div>
+
+            <div class="hero__service">
+              <div class="hero__service-content">
+                <span class="block__blur hero__service-number">2</span>
+
+                <p class="hero__service-text">Коррекция фигуры и силуэта</p>
+              </div>
+
+              <img
+                src="src/img/hero2.png"
+                alt="Косметология: уходы, инъекции, лифтинг"
+                class="hero__service-image"
+              />
+            </div>
+
+            <div class="hero__service">
+              <div class="hero__service-content">
+                <span class="block__blur hero__service-number">3</span>
+
+                <p class="hero__service-text">SPA и европейские массажи</p>
+              </div>
+
+              <img
+                src="src/img/hero3.png"
+                alt="Косметология: уходы, инъекции, лифтинг"
+                class="hero__service-image"
+              />
+            </div>
+
+            <div class="hero__service">
+              <div class="hero__service-content">
+                <span class="block__blur hero__service-number">4</span>
+
+                <p class="hero__service-text">Велнес-программы и флоатация</p>
+              </div>
+
+              <img
+                src="src/img/hero4.png"
+                alt="Косметология: уходы, инъекции, лифтинг"
+                class="hero__service-image"
+              />
+            </div>
+
+            <div class="hero__service">
+              <div class="hero__service-content">
+                <span class="block__blur hero__service-number">5</span>
+
+                <p class="hero__service-text">
+                  Beauty-услуги: волосы, ногти, макияж
+                </p>
+              </div>
+
+              <img
+                src="src/img/hero5.png"
+                alt="Косметология: уходы, инъекции, лифтинг"
+                class="hero__service-image"
+              />
+            </div>
+
+            <div class="hero__service">
+              <div class="hero__service-content">
+                <span class="block__blur hero__service-number">6</span>
+
+                <p class="hero__service-text">Тайские и балийские массажи</p>
+              </div>
+
+              <img
+                src="src/img/hero6.png"
+                alt="Косметология: уходы, инъекции, лифтинг"
+                class="hero__service-image"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section class="about">
         <div class="container"></div>
       </section>
     </main>
@@ -115,6 +265,6 @@
       <div class="container"></div>
     </footer>
 
-    <!-- <script src="src/js/main.js" defer></script> -->
+    <script src="src/js/main.js" defer></script>
   </body>
 </html>
