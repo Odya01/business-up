@@ -9,6 +9,11 @@
 
     <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="src/css/normalize.css" />
     <link rel="stylesheet" href="src/css/fonts.css" />
     <link rel="stylesheet" href="src/css/style.css" />
@@ -42,11 +47,43 @@
           </a>
 
           <div class="header__contact">
-            <a href="#" class="block__blur contact-icon icon-whatsapp"></a>
-            <a href="#" class="block__blur contact-icon icon-telegram"></a>
+            <a
+              href="#"
+              class="block__blur header__social header__social--whatsapp"
+            >
+              <svg
+                class="header__social-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.9993 5.17135C14.5368 1.30847 9.50924 0.16004 5.61028 2.5613C1.81392 4.96255 0.582669 10.1827 3.04517 14.0456L3.25038 14.3588L2.42954 17.4908L5.50767 16.6556L5.81548 16.8644C7.14934 17.5952 8.5858 18.0128 10.0223 18.0128C11.5613 18.0128 13.1004 17.5952 14.4342 16.76C18.2306 14.2544 19.3592 9.13865 16.9993 5.17135ZM14.8447 13.2103C14.4342 13.8368 13.9212 14.2544 13.203 14.3588C12.7926 14.3588 12.2795 14.5676 10.2275 13.7324C8.48319 12.8971 7.04673 11.5399 6.02069 9.97387C5.40507 9.24305 5.09725 8.30343 4.99465 7.36381C4.99465 6.52859 5.30246 5.79777 5.81548 5.27576C6.02069 5.06695 6.2259 4.96255 6.43111 4.96255H6.94413C7.14934 4.96255 7.35455 4.96255 7.45715 5.38016C7.66236 5.90217 8.17538 7.155 8.17538 7.2594C8.27799 7.36381 8.27799 7.57261 8.17538 7.67701C8.27799 7.88582 8.17538 8.09462 8.07278 8.19903C7.97017 8.30343 7.86757 8.51223 7.76496 8.61663C7.55976 8.72104 7.45715 8.92984 7.55976 9.13865C7.97017 9.76506 8.48319 10.3915 8.99621 10.9135C9.61184 11.4355 10.2275 11.8531 10.9457 12.1663C11.1509 12.2707 11.3561 12.2707 11.4587 12.0619C11.5613 11.8531 12.0743 11.3311 12.2795 11.1223C12.4848 10.9135 12.5874 10.9135 12.7926 11.0179L14.4342 11.8531C14.6394 11.9575 14.8447 12.0619 14.9473 12.1663C15.0499 12.4795 15.0499 12.8971 14.8447 13.2103Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="block__blur header__social header__social--telegram"
+            >
+              <svg
+                class="header__social-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="white"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.7874 4.57286L15.0955 16.8721C14.8924 17.7401 14.3628 17.9561 13.6101 17.5472L9.50859 14.619L7.52949 16.4631C7.31047 16.6753 7.1273 16.8528 6.7052 16.8528L6.99987 12.8058L14.6017 6.15077C14.9322 5.86528 14.53 5.70711 14.088 5.9926L4.69026 11.7255L0.644449 10.4987C-0.235594 10.2325 -0.251522 9.64609 0.827625 9.23714L16.6525 3.3306C17.3852 3.0644 18.0263 3.48878 17.7874 4.57286Z"
+                />
+              </svg>
+            </a>
 
-            <div class="contact__info">
-              <a href="tel:+79100044636" class="contact__phone"
+            <div class="header__contact-info">
+              <a href="tel:+79100044636" class="header__phone"
                 >+7 910 004-46-36</a
               >
               <span class="text__descr contact__worktime"
@@ -54,8 +91,8 @@
               >
             </div>
 
-            <button class="btn contact__btn">
-              <span class="contact__btn-text">Запись на приём</span>
+            <button class="btn header__btn">
+              <span class="header__btn-text">Запись на приём</span>
               <span class="btn__arrow btn__arrow--orange">
                 <svg
                   class="btn__icon"
@@ -77,26 +114,27 @@
         <nav class="header__nav">
           <ul class="header__nav-list list-reset">
             <li class="header__nav-item">
-              <a href="#" class="header__nav-link">
+              <button id="header__nav-link" class="header__nav-link">
                 <span class="header__nav-text">Все услуги</span>
                 <span class="header__nav-arrow">
                   <svg
+                    class="header__nav-icon"
                     width="16"
                     height="16"
-                    viewBox="0 0 16 16"
                     fill="none"
+                    viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M13.5 6.25L8 11.75L2.5 6.25"
-                      stroke="white"
                       stroke-width="1.6"
+                      stroke="white"
                       stroke-linecap="square"
                       stroke-linejoin="round"
                     />
                   </svg>
                 </span>
-              </a>
+              </button>
             </li>
             <li class="header__nav-item">
               <a href="#" class="header__nav-link">О центре</a>
@@ -127,11 +165,365 @@
             </li>
           </ul>
         </nav>
+
+        <div class="header__services">
+          <div class="header__services-nav">
+            <div class="header__services-main">
+              <div class="header__services-item" data-category="spa">
+                <span class="header__services-text">SPA & Релакс</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="wellness">
+                <span class="header__services-text">Wellness-терапия</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="figure">
+                <span class="header__services-text">Коррекция фигуры</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="wellness">
+                <span class="header__services-text">Косметология лица</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="wellness">
+                <span class="header__services-text">Beauty-услуги</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="wellness">
+                <span class="header__services-text">Дополнительно</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="wellness">
+                <span class="header__services-text">О компании</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+
+              <div class="header__services-item" data-category="wellness">
+                <span class="header__services-text">О центре</span>
+
+                <svg
+                  class="header__services-arrow"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="black"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.2848 13.091C8.12859 13.2472 7.87532 13.2472 7.71911 13.091L7.43682 12.8087C7.28061 12.6525 7.28061 12.3993 7.43682 12.243L10.3975 9.28235C10.6495 9.03036 10.471 8.59951 10.1147 8.59951L3.73532 8.59951C3.51441 8.59951 3.33532 8.42042 3.33532 8.19951V7.80074C3.33532 7.57983 3.51441 7.40074 3.73532 7.40074L10.1147 7.40074C10.471 7.40074 10.6495 6.96988 10.3975 6.7179L7.43682 3.75721C7.28061 3.601 7.28061 3.34773 7.43682 3.19152L7.71911 2.90923C7.87532 2.75302 8.12859 2.75302 8.2848 2.90923L13.0928 7.71728C13.2491 7.87349 13.2491 8.12676 13.0928 8.28297L8.2848 13.091Z"
+                  />
+                </svg>
+              </div>
+            </div>
+
+            <div class="header__services-descr">
+              <div class="header__services-sub" data-category="spa">
+                <a href="#" class="header__services-sub-link"
+                  >Европейские массажи</a
+                >
+                <a
+                  href="#"
+                  class="header__services-sub-link header__services-sub-link--active"
+                  >Женские ритуалы</a
+                >
+                <a href="#" class="header__services-sub-link">Девичники</a>
+                <a href="#" class="header__services-sub-link">Для двоих</a>
+                <a href="#" class="header__services-sub-link">Мужской уход</a>
+              </div>
+
+              <div class="header__services-sub" data-category="wellness">
+                <a href="#" class="header__services-sub-link"
+                  >Wellness массажи</a
+                >
+                <a href="#" class="header__services-sub-link"
+                  >Wellness массажи</a
+                >
+                <a href="#" class="header__services-sub-link"
+                  >Wellness массажи</a
+                >
+                <a href="#" class="header__services-sub-link"
+                  >Wellness массажи</a
+                >
+                <a href="#" class="header__services-sub-link"
+                  >Wellness массажи</a
+                >
+              </div>
+
+              <div class="header__services-sub" data-category="figure">
+                <a href="#" class="header__services-sub-link">Figure массажи</a>
+                <a
+                  href="#"
+                  class="header__services-sub-link header__services-sub-link--active"
+                  >Женские ритуалы</a
+                >
+                <a href="#" class="header__services-sub-link">Девичники</a>
+                <a href="#" class="header__services-sub-link">Для двоих</a>
+                <a href="#" class="header__services-sub-link">Мужской уход</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-cards">
+            <article class="service-card">
+              <div class="services-card__block-img">
+                <img
+                  src="src/img/thai.png"
+                  alt="Тайский массаж"
+                  class="service-card__image"
+                />
+              </div>
+
+              <div class="services-card__content">
+                <h3 class="services-card__title">Тайский массаж</h3>
+                <p class="services-card__text">
+                  Запускаем дыхание и гибкость через мягкое давление и растяжку.
+                </p>
+                <a href="#" class="services-card__link">
+                  <span class="services-card__link-text">Подробнее</span>
+
+                  <svg
+                    class="services-card__link-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7996 11.3992C11.7996 11.6201 11.6205 11.7992 11.3996 11.7992H11.0003C10.7794 11.7992 10.6003 11.6201 10.6003 11.3992V7.21217C10.6003 6.85581 10.1695 6.67734 9.9175 6.92933L5.40662 11.4402C5.25041 11.5964 4.99715 11.5964 4.84094 11.4402L4.55897 11.1582C4.40276 11.002 4.40276 10.7488 4.55897 10.5925L9.06984 6.08167C9.32183 5.82968 9.14336 5.39883 8.787 5.39883H4.59995C4.37904 5.39883 4.19995 5.21974 4.19995 4.99883V4.59961C4.19995 4.37869 4.37904 4.19961 4.59995 4.19961H11.3996C11.6205 4.19961 11.7996 4.37869 11.7996 4.59961V11.3992Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="services-card__block-img">
+                <img
+                  src="src/img/bali.png"
+                  alt="Балийский массаж"
+                  class="service-card__image"
+                />
+              </div>
+
+              <div class="services-card__content">
+                <h3 class="services-card__title">Балийский массаж</h3>
+                <p class="services-card__text">
+                  Глубоко прогреваем тело, снимаем мышечные зажимы, выравниваем
+                  дыхание.
+                </p>
+                <a href="#" class="services-card__link">
+                  <span class="services-card__link-text">Подробнее</span>
+                  <svg
+                    class="services-card__link-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7996 11.3992C11.7996 11.6201 11.6205 11.7992 11.3996 11.7992H11.0003C10.7794 11.7992 10.6003 11.6201 10.6003 11.3992V7.21217C10.6003 6.85581 10.1695 6.67734 9.9175 6.92933L5.40662 11.4402C5.25041 11.5964 4.99715 11.5964 4.84094 11.4402L4.55897 11.1582C4.40276 11.002 4.40276 10.7488 4.55897 10.5925L9.06984 6.08167C9.32183 5.82968 9.14336 5.39883 8.787 5.39883H4.59995C4.37904 5.39883 4.19995 5.21974 4.19995 4.99883V4.59961C4.19995 4.37869 4.37904 4.19961 4.59995 4.19961H11.3996C11.6205 4.19961 11.7996 4.37869 11.7996 4.59961V11.3992Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="services-card__block-img">
+                <img
+                  src="src/img/hero2.png"
+                  alt="Косметология лица"
+                  class="service-card__image"
+                />
+              </div>
+
+              <div class="services-card__content">
+                <h3 class="services-card__title">Косметология лица</h3>
+                <p class="services-card__text">
+                  Косметология: уходы, инъекции, лифтинг
+                </p>
+                <a href="#" class="services-card__link">
+                  <span class="services-card__link-text">Подробнее</span>
+                  <svg
+                    class="services-card__link-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7996 11.3992C11.7996 11.6201 11.6205 11.7992 11.3996 11.7992H11.0003C10.7794 11.7992 10.6003 11.6201 10.6003 11.3992V7.21217C10.6003 6.85581 10.1695 6.67734 9.9175 6.92933L5.40662 11.4402C5.25041 11.5964 4.99715 11.5964 4.84094 11.4402L4.55897 11.1582C4.40276 11.002 4.40276 10.7488 4.55897 10.5925L9.06984 6.08167C9.32183 5.82968 9.14336 5.39883 8.787 5.39883H4.59995C4.37904 5.39883 4.19995 5.21974 4.19995 4.99883V4.59961C4.19995 4.37869 4.37904 4.19961 4.59995 4.19961H11.3996C11.6205 4.19961 11.7996 4.37869 11.7996 4.59961V11.3992Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+
+            <article class="service-card">
+              <div class="services-card__block-img">
+                <img
+                  src="src/img/body_shaping.png"
+                  alt="Коррекция фигуры"
+                  class="service-card__image"
+                />
+              </div>
+
+              <div class="services-card__content">
+                <h3 class="services-card__title">Коррекция фигуры</h3>
+                <p class="services-card__text">
+                  Общий уход с мягкими техниками и вниманием к возрасту.
+                </p>
+                <a href="#" class="services-card__link">
+                  <span class="services-card__link-text">Подробнее</span>
+                  <svg
+                    class="services-card__link-arrow"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="black"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7996 11.3992C11.7996 11.6201 11.6205 11.7992 11.3996 11.7992H11.0003C10.7794 11.7992 10.6003 11.6201 10.6003 11.3992V7.21217C10.6003 6.85581 10.1695 6.67734 9.9175 6.92933L5.40662 11.4402C5.25041 11.5964 4.99715 11.5964 4.84094 11.4402L4.55897 11.1582C4.40276 11.002 4.40276 10.7488 4.55897 10.5925L9.06984 6.08167C9.32183 5.82968 9.14336 5.39883 8.787 5.39883H4.59995C4.37904 5.39883 4.19995 5.21974 4.19995 4.99883V4.59961C4.19995 4.37869 4.37904 4.19961 4.59995 4.19961H11.3996C11.6205 4.19961 11.7996 4.37869 11.7996 4.59961V11.3992Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
+        <div class="hero__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero__slide">
+              <video
+                class="hero__video"
+                autoplay
+                muted
+                loop
+                src="src/img/hero1.mp4"
+              ></video>
+            </div>
+
+            <div class="swiper-slide hero__slide">
+              <img src="src/img/hero2.png" alt="" class="hero__media" />
+            </div>
+
+            <div class="swiper-slide hero__slide">
+              <img src="src/img/hero3.png" alt="" class="hero__media" />
+            </div>
+
+            <div class="swiper-slide hero__slide">
+              <img src="src/img/hero4.png" alt="" class="hero__media" />
+            </div>
+
+            <div class="swiper-slide hero__slide">
+              <img src="src/img/hero5.png" alt="" class="hero__media" />
+            </div>
+
+            <div class="swiper-slide hero__slide">
+              <img src="src/img/hero6.png" alt="" class="hero__media" />
+            </div>
+          </div>
+        </div>
+
         <div class="container hero__container">
           <div class="hero__content">
             <h1 class="heading hero__heading">
@@ -265,6 +657,7 @@
       <div class="container"></div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="src/js/main.js" defer></script>
   </body>
 </html>
