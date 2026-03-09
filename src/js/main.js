@@ -34,6 +34,66 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// header__scroll
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+  const headerLogo = document.querySelector(".header__logo");
+
+  const scrollOffset = 50;
+
+  const handleScroll = () => {
+    if (window.scrollY > scrollOffset) {
+      header.classList.add("header--scroll");
+    } else {
+      header.classList.remove("header--scroll");
+    }
+
+    if (header.classList.contains("header--scroll")) {
+      headerLogo.src = "src/img/Logo3.svg";
+    } else {
+      headerLogo.src = "src/img/Logo.svg";
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+});
+
+// header__menu
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+  const headerMenuBtn = document.querySelector(".header__burger-menu");
+  const headerLogo = document.querySelector(".header__logo");
+  const body = document.body;
+
+  const overlay = document.createElement("div");
+  overlay.className = "header__overlay";
+  document.body.appendChild(overlay);
+
+  const toggleMenu = () => {
+    if (window.innerWidth < 769) return;
+
+    header.classList.toggle("header--open");
+    body.classList.toggle("body--lock");
+    overlay.classList.toggle("header__overlay--active");
+
+    if (header.classList.contains("header--open")) {
+      headerLogo.src = "src/img/Logo2.svg";
+    } else {
+      headerLogo.src = "src/img/Logo.svg";
+    }
+  };
+
+  headerMenuBtn.addEventListener("click", toggleMenu);
+
+  overlay.addEventListener("click", () => {
+    if (window.innerWidth < 769) return;
+
+    header.classList.remove("header--open");
+    body.classList.remove("body--lock");
+    overlay.classList.remove("header__overlay--active");
+  });
+});
+
 // header__services
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".header__services-item");
@@ -73,30 +133,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // hero__services
 document.addEventListener("DOMContentLoaded", () => {
-  const services = document.querySelectorAll(".hero__service");
-
-  const setActive = (index) => {
-    services.forEach((el) => el.classList.remove("hero__service--active"));
-
-    services[index].classList.add("hero__service--active");
-  };
+  const progressBars = document.querySelectorAll(".hero__progress-bar");
 
   const swiper = new Swiper(".hero__swiper", {
     effect: "fade",
     speed: 500,
+
     autoplay: {
       delay: 4500,
+      disableOnInteraction: false,
     },
-    allowTouchMove: false,
+
+    loop: true,
+  });
+
+  const setProgress = (index) => {
+    progressBars.forEach((bar) => {
+      bar.classList.remove("hero__progress-bar--active");
+    });
+
+    progressBars[index].classList.add("hero__progress-bar--active");
+  };
+
+  swiper.on("init", () => {
+    setProgress(swiper.realIndex);
   });
 
   swiper.on("slideChange", () => {
-    setActive(swiper.realIndex);
+    setProgress(swiper.realIndex);
   });
 
-  services.forEach((service, index) => {
-    service.addEventListener("click", () => {
-      swiper.slideTo(index);
+  progressBars.forEach((bar, index) => {
+    bar.addEventListener("click", () => {
+      swiper.slideToLoop(index);
     });
   });
 });
