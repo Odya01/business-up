@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.body.appendChild(overlay);
 
   const toggleMenu = () => {
-    if (window.innerWidth < 1400) return;
+    if (window.innerWidth < 769) return;
 
     header.classList.toggle("header--open");
     if (header.classList.contains("header--open")) {
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
   headerMenuBtn.addEventListener("click", toggleMenu);
 
   overlay.addEventListener("click", () => {
-    if (window.innerWidth < 1400) return;
+    if (window.innerWidth < 769) return;
 
     header.classList.remove("header--open");
     if (header.classList.contains("header--open")) {
@@ -147,6 +147,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerLogo = document.querySelector(".header__logo");
 
   headerBtn.addEventListener("click", () => {
+    if (window.innerWidth > 768) return;
+
     header.classList.toggle("header--open");
 
     if (header.classList.contains("header--open")) {
