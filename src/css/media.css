@@ -139,6 +139,7 @@
     display: flex;
     position: relative;
     height: 100%;
+    width: 100%;
 
     padding: 131px 20px 0px 20px;
   }
@@ -150,6 +151,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .hero__video {
+    max-height: 100%;
   }
 
   .hero__swiper {
@@ -232,12 +237,22 @@
     padding-top: 20px;
   }
 
+  .header--open .burger__nav::-webkit-scrollbar {
+    width: 0px;
+  }
+
   .header--open .burger__nav {
     padding-bottom: 20px;
   }
 
   .header--scroll .header__top {
     padding-top: 22px;
+  }
+}
+
+@media (max-width: 697px) {
+  .swiper-wrapper {
+    max-height: 606px;
   }
 }
 
