@@ -15,14 +15,36 @@
     <link rel="shortcut icon" href="src/img/favicon.svg" type="image/x-icon" />
 
     <link
-      rel="stylesheet"
+      rel="preload"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
     />
 
-    <link rel="stylesheet" href="src/css/normalize.css" />
-    <link rel="stylesheet" href="src/css/fonts.css" />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/media.css" />
+    <link
+      rel="preload"
+      href="css/normalize.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="css/fonts.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="css/style.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="css/media.css"
+      as="style"
+      onload="this.rel = 'stylesheet'"
+    />
   </head>
   <body>
     <header class="header">
@@ -956,6 +978,7 @@
                 autoplay
                 muted
                 loop
+                preload="none"
                 src="src/img/hero1.mp4"
               ></video>
 

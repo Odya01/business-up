@@ -1,3 +1,12 @@
+// optimize video
+document.addEventListener("DOMContentLoaded", () => {
+  const video = document.querySelector(".hero__video");
+  const source = video.querySelector("source");
+
+  source.src = source.dataset.src;
+  video.load();
+});
+
 // header__menu
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
