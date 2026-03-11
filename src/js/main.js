@@ -1,12 +1,3 @@
-// optimize video
-document.addEventListener("DOMContentLoaded", () => {
-  const video = document.querySelector(".hero__video");
-  const source = video.querySelector("source");
-
-  source.src = source.dataset.src;
-  video.load();
-});
-
 // header__menu
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
@@ -278,6 +269,12 @@ document.addEventListener("DOMContentLoaded", () => {
     autoplay: {
       delay: 4500,
       disableOnInteraction: false,
+    },
+
+    breakpoints: {
+      320: {
+        autoHeight: false,
+      },
     },
 
     loop: true,

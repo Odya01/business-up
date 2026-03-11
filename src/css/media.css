@@ -247,11 +247,9 @@
   .header--scroll.header--open .header__logo {
     max-width: 90px;
   }
-}
 
-@media (max-width: 697px) {
   .swiper-wrapper {
-    max-height: 606px;
+    max-height: 568px;
   }
 }
 
@@ -267,6 +265,6 @@
   }
 
   .swiper-wrapper {
-    max-height: 703px;
+    max-height: 660px;
   }
 }
