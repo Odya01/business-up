@@ -23,28 +23,13 @@
 
     <link
       rel="preload"
-      href="src/css/normalize.css"
+      href="css/normalize.css"
       as="style"
       onload="this.rel = 'stylesheet'"
     />
-    <link
-      rel="preload"
-      href="src/css/fonts.css"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="src/css/style.css"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-    />
-    <link
-      rel="preload"
-      href="src/css/media.css"
-      as="style"
-      onload="this.rel = 'stylesheet'"
-    />
+    <link rel="stylesheet" href="src/css/fonts.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -1505,7 +1490,10 @@
       <div class="container"></div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="src/js/main.js" defer></script>
   </body>
 </html>
