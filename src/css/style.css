@@ -1608,7 +1608,9 @@ a {
   fill: var(--wh);
 }
 
-
+.header--scroll.header--open .header__logo {
+  max-width: 70px;
+}
 
 
 /*  */
