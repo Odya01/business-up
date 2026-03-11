@@ -1016,6 +1016,11 @@ a {
   vertical-align: middle;
 
   color: var(--darkText3);
+  transition: .3s ease;
+}
+
+.burger__submenu-link:hover {
+  color: var(--orange);
 }
 
 /* burger-contact */
