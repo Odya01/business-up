@@ -234,6 +234,24 @@ document.addEventListener("DOMContentLoaded", () => {
 // hero__services
 document.addEventListener("DOMContentLoaded", () => {
   const progressBars = document.querySelectorAll(".hero__progress-bar");
+  const services = document.querySelectorAll(".hero__service");
+
+  const setActive = (index) => {
+    services.forEach((el) => el.classList.remove("hero__service--active"));
+    if (services[index]) {
+      services[index].classList.add("hero__service--active");
+    }
+  };
+
+  const setProgress = (index) => {
+    progressBars.forEach((bar) => {
+      bar.classList.remove("hero__progress-bar--active");
+    });
+
+    if (progressBars[index]) {
+      progressBars[index].classList.add("hero__progress-bar--active");
+    }
+  };
 
   const swiper = new Swiper(".hero__swiper", {
     effect: "fade",
@@ -247,24 +265,23 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
   });
 
-  const setProgress = (index) => {
-    progressBars.forEach((bar) => {
-      bar.classList.remove("hero__progress-bar--active");
-    });
-
-    progressBars[index].classList.add("hero__progress-bar--active");
-  };
-
-  swiper.on("init", () => {
-    setProgress(swiper.realIndex);
-  });
+  // стартовое состояние
+  setActive(swiper.realIndex);
+  setProgress(swiper.realIndex);
 
   swiper.on("slideChange", () => {
+    setActive(swiper.realIndex);
     setProgress(swiper.realIndex);
   });
 
   progressBars.forEach((bar, index) => {
     bar.addEventListener("click", () => {
+      swiper.slideToLoop(index);
+    });
+  });
+
+  services.forEach((service, index) => {
+    service.addEventListener("click", () => {
       swiper.slideToLoop(index);
     });
   });
