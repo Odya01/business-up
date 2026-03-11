@@ -154,6 +154,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   const headerBtn = document.querySelector(".header__burger-menu");
   const headerLogo = document.querySelector(".header__logo");
+  const burgerNav = document.querySelector(".burger__nav");
+
+  if (!header || !headerBtn) return;
 
   headerBtn.addEventListener("click", () => {
     if (window.innerWidth > 768) return;
@@ -162,14 +165,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (header.classList.contains("header--open")) {
       document.body.style.overflow = "hidden";
+
+      if (burgerNav) {
+        burgerNav.scrollTop = 0;
+      }
+
+      if (headerLogo) {
+        headerLogo.src = "src/img/Logo2.svg";
+      }
     } else {
       document.body.style.overflow = "";
-    }
 
-    if (header.classList.contains("header--open")) {
-      headerLogo.src = "src/img/Logo2.svg";
-    } else {
-      headerLogo.src = "src/img/Logo.svg";
+      if (headerLogo) {
+        headerLogo.src = "src/img/Logo.svg";
+      }
     }
   });
 });
