@@ -19,7 +19,7 @@
     display: none;
   }
 
-  .services-cards {
+  .services {
     display: none;
   }
 
@@ -183,22 +183,22 @@
     gap: 8px;
   }
 
-  .header__rating {
+  .rating {
     padding: 0 16px 0 0;
     gap: 10px;
   }
 
-  .header__rating-value {
+  .rating__value {
     font-size: 15px;
     letter-spacing: 3.4%;
   }
 
-  .header__rating-reviews {
+  .rating-reviews {
     font-size: 14px;
     letter-spacing: 4%;
   }
 
-  .block__blur {
+  .blur {
     backdrop-filter: blur(7px);
     -webkit-backdrop-filter: blur(7px);
   }
@@ -252,7 +252,6 @@
     max-height: 568px;
   }
 }
-
 
 @media (max-width: 360px) {
   .header__logo-link {

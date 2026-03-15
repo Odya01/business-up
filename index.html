@@ -37,16 +37,14 @@
       <div class="container header__container">
         <div class="header__top">
           <div class="header__info">
-            <div class="block__blur header__rating">
+            <div class="blur rating">
               <div class="rating__yandex-icon"></div>
               <div class="rating__info">
-                <span class="header__rating-value">Рейтинг • 4.9</span>
-                <span class="text__descr header__rating-reviews"
-                  >135 отзывов</span
-                >
+                <span class="rating__value">Рейтинг • 4.9</span>
+                <span class="text-descr rating-reviews">135 отзывов</span>
               </div>
             </div>
-            <div class="text__descr header__info-description">
+            <div class="text-descr header__info-description">
               Салон красоты премиального уровня в Ставрополе
             </div>
           </div>
@@ -72,10 +70,7 @@
           </a>
 
           <div class="header__contact">
-            <a
-              href="#"
-              class="block__blur header__social header__social--whatsapp"
-            >
+            <a href="#" class="blur header__social header__social--whatsapp">
               <svg
                 class="header__social-icon"
                 width="20"
@@ -89,10 +84,7 @@
                 />
               </svg>
             </a>
-            <a
-              href="#"
-              class="block__blur header__social header__social--telegram"
-            >
+            <a href="#" class="blur header__social header__social--telegram">
               <svg
                 class="header__social-icon"
                 width="20"
@@ -111,7 +103,7 @@
               <a href="tel:+79100044636" class="header__phone"
                 >+7 910 004-46-36</a
               >
-              <span class="text__descr contact__worktime"
+              <span class="text-descr contact__worktime"
                 >Пн–ВС, с 10:00–22:00</span
               >
             </div>
@@ -139,7 +131,7 @@
         <nav class="header__nav">
           <ul class="header__nav-list list-reset">
             <li class="header__nav-item">
-              <button id="header__nav-link" class="header__nav-link">
+              <button id="nav-services" class="header__nav-link">
                 <span class="header__nav-text">Все услуги</span>
                 <span class="header__nav-arrow">
                   <svg
@@ -151,6 +143,7 @@
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
+                      class="header__nav-path"
                       d="M13.5 6.25L8 11.75L2.5 6.25"
                       stroke-width="1.6"
                       stroke="white"
@@ -378,9 +371,9 @@
             </div>
           </div>
 
-          <div class="services-cards">
+          <div class="services">
             <article class="service-card">
-              <div class="services-card__block-img">
+              <div class="service-card__block-img">
                 <img
                   loading="lazy"
                   src="src/img/thai.webp"
@@ -389,16 +382,16 @@
                 />
               </div>
 
-              <div class="services-card__content">
-                <h3 class="services-card__title">Тайский массаж</h3>
-                <p class="services-card__text">
+              <div class="service-card__content">
+                <h3 class="service-card__title">Тайский массаж</h3>
+                <p class="service-card__text">
                   Запускаем дыхание и гибкость через мягкое давление и растяжку.
                 </p>
-                <a href="#" class="services-card__link">
-                  <span class="services-card__link-text">Подробнее</span>
+                <a href="#" class="service-card__link">
+                  <span class="service-card__link-text">Подробнее</span>
 
                   <svg
-                    class="services-card__link-arrow"
+                    class="service-card__link-arrow"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -414,7 +407,7 @@
             </article>
 
             <article class="service-card">
-              <div class="services-card__block-img">
+              <div class="service-card__block-img">
                 <img
                   loading="lazy"
                   src="src/img/bali.webp"
@@ -423,16 +416,16 @@
                 />
               </div>
 
-              <div class="services-card__content">
-                <h3 class="services-card__title">Балийский массаж</h3>
-                <p class="services-card__text">
+              <div class="service-card__content">
+                <h3 class="service-card__title">Балийский массаж</h3>
+                <p class="service-card__text">
                   Глубоко прогреваем тело, снимаем мышечные зажимы, выравниваем
                   дыхание.
                 </p>
-                <a href="#" class="services-card__link">
-                  <span class="services-card__link-text">Подробнее</span>
+                <a href="#" class="service-card__link">
+                  <span class="service-card__link-text">Подробнее</span>
                   <svg
-                    class="services-card__link-arrow"
+                    class="service-card__link-arrow"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -448,7 +441,7 @@
             </article>
 
             <article class="service-card">
-              <div class="services-card__block-img">
+              <div class="service-card__block-img">
                 <img
                   loading="lazy"
                   src="src/img/hero2.webp"
@@ -457,15 +450,15 @@
                 />
               </div>
 
-              <div class="services-card__content">
-                <h3 class="services-card__title">Косметология лица</h3>
-                <p class="services-card__text">
+              <div class="service-card__content">
+                <h3 class="service-card__title">Косметология лица</h3>
+                <p class="service-card__text">
                   Косметология: уходы, инъекции, лифтинг
                 </p>
-                <a href="#" class="services-card__link">
-                  <span class="services-card__link-text">Подробнее</span>
+                <a href="#" class="service-card__link">
+                  <span class="service-card__link-text">Подробнее</span>
                   <svg
-                    class="services-card__link-arrow"
+                    class="service-card__link-arrow"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -481,7 +474,7 @@
             </article>
 
             <article class="service-card">
-              <div class="services-card__block-img">
+              <div class="service-card__block-img">
                 <img
                   loading="lazy"
                   src="src/img/body_shaping.webp"
@@ -490,15 +483,15 @@
                 />
               </div>
 
-              <div class="services-card__content">
-                <h3 class="services-card__title">Коррекция фигуры</h3>
-                <p class="services-card__text">
+              <div class="service-card__content">
+                <h3 class="service-card__title">Коррекция фигуры</h3>
+                <p class="service-card__text">
                   Общий уход с мягкими техниками и вниманием к возрасту.
                 </p>
-                <a href="#" class="services-card__link">
-                  <span class="services-card__link-text">Подробнее</span>
+                <a href="#" class="service-card__link">
+                  <span class="service-card__link-text">Подробнее</span>
                   <svg
-                    class="services-card__link-arrow"
+                    class="service-card__link-arrow"
                     width="16"
                     height="16"
                     viewBox="0 0 16 16"
@@ -530,6 +523,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -571,6 +565,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -612,6 +607,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -653,6 +649,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -706,6 +703,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -747,6 +745,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -800,6 +799,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -841,6 +841,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
+                    class="burger__link-path"
                     d="M13.5 6.25L8 11.75L2.5 6.25"
                     stroke="#AFA29A"
                     stroke-width="1.6"
@@ -969,17 +970,12 @@
               ></video>
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1022,17 +1018,12 @@
               />
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1074,17 +1065,12 @@
               />
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1126,17 +1112,12 @@
               />
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1176,17 +1157,12 @@
               />
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1228,17 +1204,12 @@
               />
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1280,17 +1251,12 @@
               />
 
               <div class="hero__content">
-                <div class="block__blur header__rating">
+                <div class="blur rating">
                   <div class="rating__yandex-icon"></div>
                   <div class="rating__info">
-                    <span class="header__rating-value">Рейтинг • 4.9</span>
-                    <span
-                      class="header__rating-reviews header__rating-reviews--line"
-                      >|</span
-                    >
-                    <span class="text__descr header__rating-reviews"
-                      >135 отзывов</span
-                    >
+                    <span class="rating__value">Рейтинг • 4.9</span>
+                    <span class="rating-reviews rating-reviews--line">|</span>
+                    <span class="text-descr rating-reviews">135 отзывов</span>
                   </div>
                 </div>
 
@@ -1371,7 +1337,7 @@
           <div class="hero__services">
             <div class="hero__service hero__service--active">
               <div class="hero__service-content">
-                <span class="block__blur hero__service-number">1</span>
+                <span class="blur hero__service-number">1</span>
 
                 <p class="hero__service-text">
                   Косметология: уходы, инъекции, лифтинг
@@ -1388,7 +1354,7 @@
 
             <div class="hero__service">
               <div class="hero__service-content">
-                <span class="block__blur hero__service-number">2</span>
+                <span class="blur hero__service-number">2</span>
 
                 <p class="hero__service-text">Коррекция фигуры и силуэта</p>
               </div>
@@ -1403,7 +1369,7 @@
 
             <div class="hero__service">
               <div class="hero__service-content">
-                <span class="block__blur hero__service-number">3</span>
+                <span class="blur hero__service-number">3</span>
 
                 <p class="hero__service-text">SPA и европейские массажи</p>
               </div>
@@ -1418,7 +1384,7 @@
 
             <div class="hero__service">
               <div class="hero__service-content">
-                <span class="block__blur hero__service-number">4</span>
+                <span class="blur hero__service-number">4</span>
 
                 <p class="hero__service-text">Велнес-программы и флоатация</p>
               </div>
@@ -1433,7 +1399,7 @@
 
             <div class="hero__service">
               <div class="hero__service-content">
-                <span class="block__blur hero__service-number">5</span>
+                <span class="blur hero__service-number">5</span>
 
                 <p class="hero__service-text">
                   Beauty-услуги: волосы, ногти, макияж
@@ -1450,7 +1416,7 @@
 
             <div class="hero__service">
               <div class="hero__service-content">
-                <span class="block__blur hero__service-number">6</span>
+                <span class="blur hero__service-number">6</span>
 
                 <p class="hero__service-text">Тайские и балийские массажи</p>
               </div>
@@ -1465,7 +1431,7 @@
           </div>
         </div>
 
-        <a href="#about" class="hero__circel-down">
+        <a href="#about" class="hero__circle-down">
           <svg
             class="hero__circel-icon"
             width="16"

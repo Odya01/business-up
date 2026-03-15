@@ -1,7 +1,7 @@
 // header__menu
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
-  const headerMenuBtn = document.querySelector("#header__nav-link");
+  const headerMenuBtn = document.querySelector("#nav-services");
   const headerLogo = document.querySelector(".header__logo");
 
   const overlay = document.createElement("div");
