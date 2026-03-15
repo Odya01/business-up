@@ -479,6 +479,7 @@ a {
 
 .header--open .header__contact-info {
   margin-right: 22px;
+  gap: 0;
 }
 
 .header--open .header__social--whatsapp {
